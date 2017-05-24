@@ -1,0 +1,6 @@
+
+;rotate left
+(define (rotate_l l)  (append (cdr l)(list (car l))))
+
+;rotate right
+(define (rotate_r l)  (append (list (car (reverse l))) (reverse (cdr (reverse l)))  ))
