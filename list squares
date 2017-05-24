@@ -1,0 +1,8 @@
+
+
+(define (square? n) (equal?  n (*(sqrt n)(sqrt n))))                
+(define (square_count l) (cond ((null? l)0)  ((square? (car l))  (+ 1 (square_count (cdr l)))) (else (square_count (cdr l)))))
+(define (all_squares? l) (equal?(square_count l) (length l) ))
+(define (len l) (cond ((null? l)0)  (else(+ 1 (len (cdr l))))))
+
+
