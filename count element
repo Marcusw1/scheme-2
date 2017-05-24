@@ -1,0 +1,3 @@
+
+(define (count e lst)
+           (cond ((null? lst)0) ((equal? e (car lst)) (+ 1 (count e (cdr lst)))) (else (count e (cdr lst)))))
