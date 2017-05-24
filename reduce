@@ -1,1 +1,5 @@
+
+
 (define (reduce l) (append '()(reverse(cdr(reverse(cdr l))))))
+
+
