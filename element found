@@ -1,0 +1,4 @@
+
+
+(define (found e l)  (cond((null? l)#f) ((equal? e (car l))#t) (else (found e (cdr l))) ))
+
